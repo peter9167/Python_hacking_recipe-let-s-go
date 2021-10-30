@@ -14,7 +14,7 @@ def parsing(host):
     # socket 옵션
     sock.setsockopt(IPPROTO_IP, IP_HDRINCL, 1)
 
-    # promiscuos mode
+    # promiscuos mode 켜기
     if os.name == "nt":
         sock.ioctl(SIO_RCVALL, RCVALL_ON)
 
