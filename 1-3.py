@@ -47,11 +47,11 @@ class Monster:
 
 
 def create_monster(monster):
-    if monster == "화끈몬":
+    if monster == "화끈몬":  # monster == 화끈몬이면 실행
         return Monster("화끈몬", "불", ["불꽃뿜기", "머리박치기", "불꽃펀치"], {"공격력": 4, "방어력": 2})
-    elif monster == "축축몬":
+    elif monster == "축축몬":  # monster == 축축몬이면 실행
         return Monster("축축몬", "물", ["방울빔", "태클", "몸통박치기"], {"공격력": 3, "방어력": 3})
-    elif monster == "수풀몬":
+    elif monster == "수풀몬":  # monster == 수풀몬이면 실행
         return Monster("수풀몬", "풀", ["덩굴채찍", "태클", "잎사귀날리기"], {"공격력": 2, "방어력": 4})
 
 
