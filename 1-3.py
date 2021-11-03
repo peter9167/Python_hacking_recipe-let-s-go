@@ -1,9 +1,9 @@
 # 체력 게이지 바 제대로 동작되지 않아 추후 수정.
-import random
-import time
-import os
-import sys
-from utils.display import delay_print
+import random # import random
+import time #import time
+import os #import os
+import sys #import sys
+from utils.display import delay_print #from utils.display import delay_print
 
 
 def initial_display():
