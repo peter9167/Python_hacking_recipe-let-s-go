@@ -1,6 +1,6 @@
-from socket import *
-import os
-import struct
+from socket import * #from socket import *
+import os #import os
+import struct #import struct
 
 
 def parse_ip_header(ip_header):
