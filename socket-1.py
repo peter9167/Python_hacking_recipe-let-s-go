@@ -1,5 +1,5 @@
 from socket import * #from socket import *
-import os
+import os #import os
 
 
 def parsing(host):
