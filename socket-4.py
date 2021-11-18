@@ -18,7 +18,10 @@ def parse_icmp_header(icmp_data):
 
 def parsing(host):
     # raw socket 생성 및 binding
-    
+    if os.name == "nt":
+        sock_protocol = IPPROTO_IP
+    else:
+        sock_protocol = IPPROTO_ICMP
     sock = socket(AF_INET, SOCK_STREAM, sock_protocol)
     sock.bind((host, 0))
 
