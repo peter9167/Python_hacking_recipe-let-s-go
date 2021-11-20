@@ -25,12 +25,7 @@ def parsing(host):
     sock = socket(AF_INET, SOCK_STREAM, sock_protocol)
     sock.bind((host, 0))
 
-    # socket 옵션
-    sock.setsockopt(IPPROTO_IP, IP_HDRINCL, 1)
-
-    # promiscuos mode 켜기
-    if os.name == "nt":
-        sock.ioctl(SIO_RCVALL, RCVALL_ON)
+    
         
     file_path="./recv_logo.png"
     if os.path.isfile(file_path):
