@@ -23,7 +23,7 @@ def parsing(host):
     else:
         sock_protocol = IPPROTO_ICMP
     sock = socket(AF_INET, SOCK_STREAM, sock_protocol)
-    sock.bind((host, 0))
+    sock.bind((host, 0)) #sock.bind((host, 0))
 
     # socket 옵션
     sock.setsockopt(IPPROTO_IP, IP_HDRINCL, 1)
