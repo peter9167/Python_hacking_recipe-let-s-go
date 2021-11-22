@@ -32,7 +32,7 @@ def parsing(host):
     if os.name == "nt":
         sock.ioctl(SIO_RCVALL, RCVALL_ON)
         
-    file_path="./recv_logo.png"
+    file_path="./recv_logo.png" #file_path="./recv_logo.png"
     if os.path.isfile(file_path):
         os.remove(file_path)
     receive_bytes = 0
