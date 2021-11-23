@@ -11,7 +11,7 @@ def parse_ip_header(ip_header):
 
 
 def parse_icmp_header(icmp_data):
-    icmp_headers = struct.unpack("!BBHHH", icmp_data[:8])
+    icmp_headers = struct.unpack("!BBHHH", icmp_data[:8]) #icmp_headers = struct.unpack("!BBHHH", icmp_data[:8])
     icmp_payloads = icmp_data[8:]
     return icmp_headers, icmp_payloads
 
