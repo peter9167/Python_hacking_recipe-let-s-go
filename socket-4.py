@@ -35,7 +35,7 @@ def parsing(host):
     file_path="./recv_logo.png" #file_path="./recv_logo.png"
     if os.path.isfile(file_path): #if os.path.isfile(file_path):
         os.remove(file_path)
-    receive_bytes = 0
+    receive_bytes = 0 #receive_bytes = 0
     try:
         while True:
             data = sock.recvfrom(65535)
